@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <style>
+  body{
+   font-family: "Open Sans", sans-serif;
+   background-image:url("registerbg.jpg");
+  -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    }
+    .container {
+  margin-top: 50px;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;  
+  height: 50vh;
+}
+    fieldset{
+  margin-top: 200px;
+  background-color:transparent;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px;
+  border-color:tranparent;
+}
+form {
+  width: 300px;
+}
+label{
+color:white;
+font-weight:bolder;
+}
+#username,#email,#pass{
+  cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 1em;
+  background-color:transparent;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 8px 0;
+  padding: 10px 10px;
+  width: 100%;
+  font-weight: bolder;
+  color:white;
+  border-color: transparent;
+  box-shadow: 0px 0px 10px;
+}
+#submit{
+cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 1em;
+  background-color:transparent;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 8px 0;
+  padding: 10px 10px;
+  width: 50%;
+  color:white;
+  font-weight: bolder;
+  box-shadow: 0px 0px 10px;
+  border-color:tranparent;
+  font-size:100%;
+}
+placeholder{
+color:white;
+font-weight:bold;
+text-color:white;
+}
+  </style>
+    <body>
+    <div class="container">
+    <fieldset id="field" class="field">
+        <form method="post" action="userRegistration">
+        <input type="text" name="username" placeholder="NAME" class="username" id="username"/>
+        <br>
+        <input type="text" name="email" placeholder="E-MAIL" class="email" id="email"/>
+        <br>
+        <input type="password" name="pass" placeholder="PASSWORD" class="pass" id="pass"/>
+        <br>
+       <center><input type="submit" value="Register" class="submit" id="submit" name="submit" /></center>
+        </form>
+        </fieldset>
+        </div>
+    </body>
+</html>
